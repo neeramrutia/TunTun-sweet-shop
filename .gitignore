@@ -1,0 +1,50 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+.next/
+out/
+dist/
+build/
+
+# Local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+*.log.*
+lerna-debug.log
+
+# Coverage (for tests)
+coverage/
+.nyc_output/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+*.tsbuildinfo
+
+# MongoDB (if you ever dump locally)
+dump/
