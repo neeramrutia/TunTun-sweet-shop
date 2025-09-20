@@ -1,17 +1,19 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 mt-12 py-8 transition-colors duration-300">
       <div className="container mx-auto grid md:grid-cols-3 gap-6 text-center md:text-left">
         <div>
-          <h3 className="font-bold text-lg mb-2">TunTun's Sweet Shop Pvt. Ltd.</h3>
+          <h3 className="font-bold text-lg mb-2">TunTun Sweet Shop Pvt. Ltd.</h3>
           <p>Delivering sweetness since 1995.</p>
         </div>
         <div>
           <h4 className="font-semibold mb-2">Quick Links</h4>
           <ul className="space-y-1">
-            <li><a href="/" className="hover:text-pink-500">Home</a></li>
-            <li><a href="/about" className="hover:text-pink-500">About</a></li>
-            <li><a href="/sweets" className="hover:text-pink-500">Sweets</a></li>
+            <li><Link href="/" className="hover:text-pink-500">Home</Link></li>
+            <li><Link href="/about" className="hover:text-pink-500">About</Link></li>
+            <li><Link href="/sweets" className="hover:text-pink-500">Sweets</Link></li>
           </ul>
         </div>
         <div>
@@ -26,7 +28,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-center text-sm mt-6 text-gray-500 dark:text-gray-400">
-        © {new Date().getFullYear()} TunTun's Sweet Shop Pvt. Ltd. All rights reserved.
+        © {new Date().getFullYear()} TunTun Sweet Shop Pvt. Ltd. All rights reserved.
       </p>
     </footer>
   );

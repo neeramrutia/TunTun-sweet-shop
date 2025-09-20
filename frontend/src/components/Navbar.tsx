@@ -35,7 +35,7 @@ export default function Navbar() {
     <nav className="bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-pink-600 dark:text-pink-400">
-          🍬 TunTun's Sweet Shop
+          🍬 TunTun Sweet Shop
         </Link>
 
         <div className="flex items-center gap-4">
