@@ -26,7 +26,7 @@ router.post("/register", async (req, res) => {
     if (existing) return res.status(400).json({ message: "User already exists" });
 
     const hashed = await bcrypt.hash(password, 10);
-    const user = new User({ name, email, password: hashed, isAdmin: !!isAdmin });
+    const user = new User({ name, email, password: hashed, isAdmin: false });
     await user.save();
 
     return res.status(201).json({ message: "User registered" });
@@ -61,7 +61,10 @@ router.post("/login", async (req, res) => {
       expiresIn: "1d"
     });
 
-    return res.json({ token });
+    return res.json({ token , user:{
+      name: user.name,
+      email: user.email,
+      role: user.isAdmin ? "admin" : "user"} });
   } catch (err) {
     console.error(err);
     return res.status(500).json({ message: "Server error" });
