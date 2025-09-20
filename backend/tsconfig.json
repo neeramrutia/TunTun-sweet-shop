@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "esnext",
+      "moduleResolution": "bundler",
+      "lib": ["ES2022"],
+      "outDir": "dist",
+      "rootDir": "src",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": false,
+      "noImplicitAny": false,
+      "types": ["node", "express", "jest"]
+    },
+    "include": ["src/**/*"]
+  }
+  
