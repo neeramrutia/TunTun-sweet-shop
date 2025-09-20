@@ -2,7 +2,7 @@ export default function HomePage() {
   return (
     <section className="text-center py-16">
       <h1 className="text-5xl font-extrabold mb-6 text-pink-600">
-        🍬 TunTun's Sweet Shop Pvt. Ltd.
+        🍬 TunTun Sweet Shop Pvt. Ltd.
       </h1>
       <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
         Bringing happiness through sweets since 1995. 

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { login } from "@/lib/api";
 import Cookies from "js-cookie";
 import type { AuthResponse } from "@/types";
@@ -9,7 +8,6 @@ import type { AuthResponse } from "@/types";
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const router = useRouter();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
