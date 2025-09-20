@@ -13,8 +13,7 @@ export default function RegisterPage() {
     e.preventDefault();
     try {
       const data = await register(form);
-      Cookies.set("token", data.token, { expires: 1 });
-      router.push("/login");
+      router.push("/auth/login");
     } catch (err) {
       console.error("Registration failed:", err);
       alert("Error creating account");
